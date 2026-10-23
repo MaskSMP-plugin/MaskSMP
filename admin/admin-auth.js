@@ -2,7 +2,7 @@
   'use strict';
   // SHA-256 verifier hides the plain-text password from this file, but GitHub Pages is static:
   // this remains only a basic gate, not real server-side authentication.
-  const PASSWORD_SHA256 = 'be2a38f3fdd363d0e0591544f622d23c0aa8078636facabdcca2370c3c8ebd11';
+  const PASSWORD_SHA256 = '78f87e37bbbb99e81dfe357e249c1128813560e5470c73b8b077393940ab8311';
   const SESSION_KEY = 'masksmp-admin-session-v2';
 
   const sha256 = async value => {
