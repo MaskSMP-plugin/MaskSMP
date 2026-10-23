@@ -1,0 +1,5 @@
+IMPORTANT: KEEP YOUR CURRENT site-config.json IN GITHUB.
+
+This website-code ZIP intentionally omits site-config.json so you do not accidentally overwrite the newer live configuration with an older copy from the supplied ZIP. Upload/replace the HTML, JavaScript, CSS, admin and asset files from this ZIP into the existing repository; do not delete the repository and do not remove its current site-config.json.
+
+After the updated website is published, use /admin/ > Publish changes to GitHub to publish future changes to all visitors.

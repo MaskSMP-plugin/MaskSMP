@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#120a20">
+  <meta name="description" content="Discover MaskSMP, a Minecraft plugin featuring unique masks, abilities, and upgrades.">
+  <title>MaskSMP — Minecraft plugin</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js?v=publish-fix-1" defer></script>
+  <script src="mask-rotator.js" defer></script>
+  <link rel="icon" href="favicon.ico?v=publish-fix-1" sizes="any"><link rel="icon" type="image/png" sizes="32x32" href="favicon.png?v=publish-fix-1">
+</head>
+<body>
+  <div class="site-shell">
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="MaskSMP homepage"><img class="brand-logo" src="assets/masksmp-logo-wide.png" alt="MaskSMP logo"><span class="brand-caption">MINECRAFT PLUGIN</span><span class="sr-only" data-config="siteName">MaskSMP</span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Open menu">☰</button>
+      <nav id="main-nav" class="main-nav" aria-label="Main navigation">
+        <a class="active" href="index.html" data-config="navHomeText">Home</a>
+        <a href="masks.html" data-config="navMasksText">Masks</a>
+        <a href="downloads.html" data-config="navDownloadsText">Downloads</a>
+        <a href="features.html" data-config="navFeaturesText">Features</a>
+        <a href="gallery.html" data-config="navGalleryText">Gallery</a>
+      </nav>
+      <a class="button button-small button-primary header-download-cta" href="downloads.html"><span data-config="navPluginText">Download plugin</span> <span aria-hidden="true">↓</span></a>
+    </header>
+
+    <main>
+      <section class="hero section-wrap">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="status-dot"></span><span data-config="heroEyebrow">MINECRAFT PLUGIN</span></div>
+          <h1><span data-config="heroTitle">Your server.</span><br><span class="text-accent" data-config="heroAccent">Your legend.</span></h1>
+          <p class="hero-description" data-config="heroDescription">Bring unique masks, distinctive abilities, and an upgrade system to your Minecraft server.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" id="hero-download" href="downloads.html"><span data-config="heroDownloadText">Download plugin</span> <span aria-hidden="true">↗</span></a>
+            <a class="button button-quiet" href="masks.html"><span data-config="heroMasksText">Explore the masks</span> <span aria-hidden="true">→</span></a>
+          </div>
+          <div class="hero-meta">
+            <span><i aria-hidden="true">✦</i> <span data-config="heroMetaOne">16 mask types</span></span>
+            <span><i aria-hidden="true">↗</i> <span data-config="heroMetaTwo">6 upgrade tiers</span></span>
+            <span><i aria-hidden="true">⌘</i> <span data-config="heroMetaThree">Unique abilities</span></span>
+          </div>
+        </div>
+        <a class="hero-visual hero-mask-stage" href="masks.html" aria-label="Bekijk de roterende 3D-mask en open alle masks"><canvas id="mask-rotator" width="900" height="900" aria-label="Een 3D Minecraft-mask draait en verandert na iedere volledige draai"></canvas></a>
+      </section>
+
+      <section class="trust-strip" aria-label="Plugin kenmerken">
+        <div class="section-wrap trust-inner"><span data-config="trustOne">BUILT FOR MINECRAFT SERVERS</span><i></i><span data-config="trustTwo">MASK COLLECTION</span><i></i><span data-config="trustThree">PROGRESSION SYSTEM</span><i></i><span data-config="trustFour">YOUR PLAYSTYLE</span></div>
+      </section>
+
+      <section class="section-wrap section-block" id="features">
+        <div class="section-heading">
+          <div><p class="eyebrow" data-config="featuresEyebrow">MAKE EVERY MASK UNIQUE</p><h2><span data-config="featuresTitleOne">A new way</span><br><span data-config="featuresTitleTwo">to play.</span></h2></div>
+          <div class="section-intro-block"><p class="section-intro"><span data-config="featuresIntro">Give players a reason to explore, upgrade, and find their own style. MaskSMP revolves around different masks and their abilities.</span></p><a class="text-link" href="features.html">Explore every feature <span aria-hidden="true">→</span></a></div>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card"><span class="feature-icon">✦</span><p class="card-kicker">01 / COLLECTION</p><h3 data-config="featureOneTitle">Unique masks</h3><p data-config="featureOneText">Explore a collection featuring Dragon, Flame, Shadow, Storm, Ocean, Galaxy, and more.</p><a href="masks.html"><span data-config="featureOneLink">Explore the collection</span> <span aria-hidden="true">→</span></a></article>
+          <article class="feature-card featured-card"><span class="feature-icon">↗</span><p class="card-kicker">02 / ABILITIES</p><h3 data-config="featureTwoTitle">Impactful abilities</h3><p data-config="featureTwoText">Give every mask a distinct playstyle, from powerful attacks to tactical abilities.</p><a href="masks.html"><span data-config="featureTwoLink">See examples</span> <span aria-hidden="true">→</span></a></article>
+          <article class="feature-card"><span class="feature-icon">⌁</span><p class="card-kicker">03 / PROGRESSION</p><h3 data-config="featureThreeTitle">Upgrade your mask</h3><p data-config="featureThreeText">Progress through six tiers and let players work toward their next upgrade with <code>/mask upgrade</code>.</p><a href="downloads.html"><span data-config="featureThreeLink">Plugin details</span> <span aria-hidden="true">→</span></a></article>
+        </div>
+      </section>
+
+      <section class="section-wrap section-block mask-preview-section">
+        <div class="section-heading compact-heading"><div><p class="eyebrow" data-config="maskPreviewEyebrow">FIND YOUR PLAYSTYLE</p><h2 data-config="maskPreviewTitle">Which mask fits your playstyle?</h2></div><a class="text-link" href="masks.html"><span data-config="maskPreviewLink">All 16 masks</span> <span aria-hidden="true">→</span></a></div>
+        <div class="mask-row" aria-label="Voorbeelden van masks">
+          <a class="mask-tile tone-gold" href="masks.html#dragon"><span class="mask-symbol">D</span><span><b>Dragon</b><small>Power · Fire</small></span><span class="tile-arrow">↗</span></a>
+          <a class="mask-tile tone-orange" href="masks.html#flame"><span class="mask-symbol">F</span><span><b>Flame</b><small>Fire · Attack</small></span><span class="tile-arrow">↗</span></a>
+          <a class="mask-tile tone-blue" href="masks.html#shadow"><span class="mask-symbol">S</span><span><b>Shadow</b><small>Tactics · Stealth</small></span><span class="tile-arrow">↗</span></a>
+          <a class="mask-tile tone-violet" href="masks.html#galaxy"><span class="mask-symbol">G</span><span><b>Galaxy</b><small>Cosmic · Rare</small></span><span class="tile-arrow">↗</span></a>
+        </div>
+      </section>
+
+      <section class="section-wrap section-block gallery-section" id="gallery">
+        <div class="section-heading compact-heading"><div><p class="eyebrow" data-config="galleryEyebrow">IN-GAME GALLERY</p><h2 data-config="galleryTitle">From your server.</h2></div><div class="section-intro-block"><p class="section-intro"><span data-config="galleryIntro">Screenshots you add through the admin panel will appear here after you save and publish your changes.</span></p><a class="text-link" href="gallery.html">Open full gallery <span aria-hidden="true">→</span></a></div></div>
+        <div id="gallery-grid" class="gallery-grid"><div class="gallery-empty"><span aria-hidden="true">▧</span><b data-config="galleryEmptyTitle">Your screenshots will appear here</b><p data-config="galleryEmptyText">Open the admin panel to add images.</p></div></div>
+      </section>
+
+
+      <section class="section-wrap section-block" id="download-teaser">
+        <div class="downloads-teaser"><div><p class="eyebrow" data-config="downloadsEyebrow">DOWNLOADS / RELEASES</p><h2>Your plugin. <span class="text-accent">Your version.</span></h2><p data-config="downloadsIntro">Choose the plugin version that fits your server or download a resource pack. Manage versions and files in the admin panel.</p></div><a class="button button-primary" href="downloads.html"><span data-config="heroDownloadText">Download plugin</span> <span aria-hidden="true">↗</span></a></div>
+      </section>
+
+      <section class="section-wrap section-block" id="plugin">
+        <div class="plugin-cta">
+          <div class="cta-orb" aria-hidden="true"><span></span></div>
+          <div class="cta-copy"><p class="eyebrow" data-config="pluginCtaEyebrow">READY TO UPGRADE YOUR SERVER?</p><h2 data-config="pluginDescription">Bring the MaskSMP experience to your server.</h2><p class="cta-version">Plugin version: <strong data-config="pluginVersion">Not set yet</strong><span class="dot-separator">•</span>Minecraft version: <strong data-config="minecraftVersion">Not set yet</strong><span id="server-ip-line" hidden class="server-ip-line"><span class="dot-separator">•</span>Server IP: <strong data-config="serverIp"></strong></span></p></div>
+          <div class="cta-actions"><a id="plugin-download" class="button button-primary" href="downloads.html"><span data-config="pluginInfoDownloadText">Download plugin</span> <span aria-hidden="true">↗</span></a><a id="discord-link" class="button button-outline" href="#" hidden target="_blank" rel="noopener noreferrer">Join Discord <span aria-hidden="true">↗</span></a><p id="download-note" class="download-note">Choose your plugin version on the Downloads page.</p></div>
+        </div>
+      </section>
+
+      <div id="image-lightbox" class="image-lightbox" hidden role="dialog" aria-modal="true" aria-label="Enlarge image">
+        <button type="button" class="lightbox-control lightbox-close" id="lightbox-close" aria-label="Close image">×</button>
+        <button type="button" class="lightbox-control lightbox-prev" id="lightbox-prev" aria-label="Previous image">‹</button>
+        <figure class="lightbox-panel"><img id="lightbox-image" alt=""><figcaption class="lightbox-caption"><span id="lightbox-title"></span><span id="lightbox-count" class="lightbox-count"></span></figcaption></figure>
+        <button type="button" class="lightbox-control lightbox-next" id="lightbox-next" aria-label="Next image">›</button>
+      </div>
+    </main>
+
+    <footer class="site-footer"><div class="section-wrap footer-inner"><a class="brand footer-brand" href="index.html" aria-label="MaskSMP homepage"><img class="brand-logo" src="assets/masksmp-logo-wide.png" alt="MaskSMP logo"><span class="brand-caption">MINECRAFT PLUGIN</span><span class="sr-only" data-config="siteName">MaskSMP</span></a><p data-config="footerTagline">Made for players who want to write their own story.</p><div class="footer-links"><a href="masks.html" data-config="navMasksText">Masks</a><a href="downloads.html" data-config="navDownloadsText">Downloads</a><a href="features.html">Features</a><a href="gallery.html">Gallery</a><a href="#plugin">Plugin</a><a id="contact-link" href="#" hidden>Contact</a><a href="license.html">License</a></div><small>© <span id="year"></span> <span data-config="siteName">MaskSMP</span>. All rights reserved.</small></div></footer>
+  </div>
+</body>
+</html>
